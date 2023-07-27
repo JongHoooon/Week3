@@ -10,26 +10,13 @@ import UIKit
 final class SettingTableViewController: UITableViewController {
     
     // MARK: - Properties
-    private let headerTitiles = [
-        "전체 설정", "개인 설정", "기타"
-    ]
+    private let headerTitiles = SettingCategory
+        .allCases
+        .map { $0.title }
     
-    private let settings = [
-        [
-            "공지사항",
-            "실험실",
-            "버전 정보"
-        ],
-        [
-            "개인/보안",
-            "알림",
-            "채팅",
-            "멀티프로필"
-        ],
-        [
-            "고객센터/도움말"
-        ]
-    ]
+    private let settings = SettingCategory
+        .allCases
+        .map { $0.details }
     
     // MARK: - Lifecycle
     
@@ -60,6 +47,7 @@ extension SettingTableViewController {
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell") else { return UITableViewCell() }
         
         cell.textLabel?.text = settings[indexPath.section][indexPath.row]
