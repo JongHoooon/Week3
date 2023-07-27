@@ -22,6 +22,7 @@
 		EDF0A1842A7256060057BA20 /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF0A1822A7256060057BA20 /* ShoppingTableViewController.swift */; };
 		EDF0A1872A7256390057BA20 /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF0A1862A7256390057BA20 /* Shopping.storyboard */; };
 		EDF0A18A2A725C780057BA20 /* ShoppingImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF0A1892A725C780057BA20 /* ShoppingImages.swift */; };
+		EDF0A18C2A726EE20057BA20 /* ShoppingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF0A18B2A726EE20057BA20 /* ShoppingInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		EDF0A1822A7256060057BA20 /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
 		EDF0A1862A7256390057BA20 /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
 		EDF0A1892A725C780057BA20 /* ShoppingImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingImages.swift; sourceTree = "<group>"; };
+		EDF0A18B2A726EE20057BA20 /* ShoppingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		EDF0A1812A7255F10057BA20 /* Shopping */ = {
 			isa = PBXGroup;
 			children = (
+				EDF0A18B2A726EE20057BA20 /* ShoppingInfo.swift */,
 				EDF0A1822A7256060057BA20 /* ShoppingTableViewController.swift */,
 				EDF0A1892A725C780057BA20 /* ShoppingImages.swift */,
 				EDF0A1862A7256390057BA20 /* Shopping.storyboard */,
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF0A18A2A725C780057BA20 /* ShoppingImages.swift in Sources */,
+				EDF0A18C2A726EE20057BA20 /* ShoppingInfo.swift in Sources */,
 				EDF0A17E2A7253EB0057BA20 /* SettingTableViewController.swift in Sources */,
 				EDF0A1842A7256060057BA20 /* ShoppingTableViewController.swift in Sources */,
 				ED4E53A82A71FFEA00F45019 /* ViewController.swift in Sources */,

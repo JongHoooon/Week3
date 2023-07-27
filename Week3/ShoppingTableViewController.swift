@@ -11,11 +11,11 @@ final class ShoppingTableViewController: UITableViewController {
     
     // MARK: - Properties
     
-    private var shoppings: [(isChecked: Bool, title: String, isStared: Bool)] = [
-        (true, "그립톡 구매하기", true),
-        (false, "사이다 구매", false),
-        (false, "아이패드 케이스 최저가 알아보기", true),
-        (false, "양말", true)
+    private var shoppingInfos: [ShoppingInfo] = [
+        ShoppingInfo(title: "그립톡 구매하기", isChecked: true, isStared: true),
+        ShoppingInfo(title: "사이다 구매", isChecked: false, isStared: false),
+        ShoppingInfo(title: "아이패드 케이스 최저가 알아보기", isChecked: true, isStared: true),
+        ShoppingInfo(title: "양말", isChecked: false, isStared: true)
     ]
     
     // MARK: - UI
@@ -38,7 +38,11 @@ final class ShoppingTableViewController: UITableViewController {
         guard let shoppingText = inputTextField.text,
               !shoppingText.isEmpty else { return }
         
-        shoppings.append((false, shoppingText, false))
+        shoppingInfos.append(ShoppingInfo(
+            title: shoppingText,
+            isChecked: false,
+            isStared: false
+        ))
         inputTextField.text = nil
         
         tableView.reloadData()
@@ -64,7 +68,7 @@ extension ShoppingTableViewController {
         numberOfRowsInSection section: Int
     ) -> Int {
         
-        return shoppings.count
+        return shoppingInfos.count
     }
     
     override func tableView(
@@ -74,13 +78,13 @@ extension ShoppingTableViewController {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "shoppingCell") else { return UITableViewCell() }
                 
-        let shopping = shoppings[indexPath.row]
+        let shoppingInfo = shoppingInfos[indexPath.row]
         
-        cell.imageView?.image = shopping.isChecked ?
+        cell.imageView?.image = shoppingInfo.isChecked ?
             ShoppingImages.checkedBox :
             ShoppingImages.notCheckedBox
-        cell.textLabel?.text = shopping.title
-        cell.accessoryView = shopping.isStared ?
+        cell.textLabel?.text = shoppingInfo.title
+        cell.accessoryView = shoppingInfo.isStared ?
             UIImageView(image: ShoppingImages.checkedStar) :
             UIImageView(image: ShoppingImages.notCheckedStar)
         
