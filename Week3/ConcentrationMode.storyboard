@@ -169,11 +169,13 @@
             </objects>
             <point key="canvasLocation" x="1219.0839694656488" y="-99.295774647887328"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Concentration-->
         <scene sceneID="kKI-00-g9c">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HQU-9a-8Cb" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ConcentrationMode" automaticallyAdjustsScrollViewInsets="NO" id="HQU-9a-8Cb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Concentration" image="moon.fill" catalog="system" id="F3R-Fe-coG"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4CS-8j-Udt">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -185,7 +187,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cu7-Lu-Jdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="292.36641221374043" y="-99.295774647887328"/>
+            <point key="canvasLocation" x="294" y="-99"/>
         </scene>
     </scenes>
     <resources>

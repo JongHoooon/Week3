@@ -7,11 +7,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Shopping-->
         <scene sceneID="EdA-hG-QBD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cfv-9o-BYg" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Shopping" automaticallyAdjustsScrollViewInsets="NO" id="cfv-9o-BYg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shopping" image="cart.fill" catalog="system" id="h9V-gm-lgl"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Way-6H-KhZ">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -23,7 +25,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEb-yb-f6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90.839694656488547" y="-28.169014084507044"/>
+            <point key="canvasLocation" x="94" y="-28"/>
         </scene>
         <!--쇼핑-->
         <scene sceneID="34A-wq-eGn">
@@ -118,6 +120,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
