@@ -8,9 +8,7 @@
 import UIKit
 
 final class CustomTableViewCell: UITableViewCell {
-    
-    static let identifier = "CustomTableViewCell"
-    
+        
     @IBOutlet weak private var customCellBackgroundView: UIView!
     @IBOutlet weak private var checkBoxImageView: UIImageView!
     @IBOutlet weak private var mainTitleLabel: UILabel!
