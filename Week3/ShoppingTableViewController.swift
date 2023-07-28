@@ -29,6 +29,7 @@ final class ShoppingTableViewController: UITableViewController {
         super.viewDidLoad()
         
         configBackgroundView()
+        tableView.keyboardDismissMode = .onDrag
     }
     
     // MARK: - Action
