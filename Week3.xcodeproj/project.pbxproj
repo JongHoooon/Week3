@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED4B94E32A735040000A38A0 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B94E22A735040000A38A0 /* CustomTableViewController.swift */; };
+		ED4B94E52A735286000A38A0 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B94E42A735286000A38A0 /* CustomTableViewCell.swift */; };
 		ED4E53A42A71FFEA00F45019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E53A32A71FFEA00F45019 /* AppDelegate.swift */; };
 		ED4E53A62A71FFEA00F45019 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E53A52A71FFEA00F45019 /* SceneDelegate.swift */; };
 		ED4E53A82A71FFEA00F45019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E53A72A71FFEA00F45019 /* ViewController.swift */; };
@@ -14,6 +16,9 @@
 		ED4E53AD2A71FFEB00F45019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4E53AC2A71FFEB00F45019 /* Assets.xcassets */; };
 		ED4E53B02A71FFEB00F45019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4E53AE2A71FFEB00F45019 /* LaunchScreen.storyboard */; };
 		ED4E53B82A720FF000F45019 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E53B72A720FF000F45019 /* TodoTableViewController.swift */; };
+		ED9CD5602A7389C40017F266 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CD55F2A7389C40017F266 /* ToDo.swift */; };
+		ED9CD5622A738A040017F266 /* TodoInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CD5612A738A040017F266 /* TodoInformation.swift */; };
+		EDDB10E72A739E0900BA79A8 /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDB10E62A739E0900BA79A8 /* Movie.storyboard */; };
 		EDF0A1762A7232D70057BA20 /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF0A1752A7232D70057BA20 /* StudyTableViewController.swift */; };
 		EDF0A1782A7249650057BA20 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF0A1772A7249650057BA20 /* Extension.swift */; };
 		EDF0A17A2A724FAE0057BA20 /* ConcentrationMode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF0A1792A724FAE0057BA20 /* ConcentrationMode.storyboard */; };
@@ -27,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED4B94E22A735040000A38A0 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		ED4B94E42A735286000A38A0 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		ED4E53A02A71FFEA00F45019 /* Week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4E53A32A71FFEA00F45019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED4E53A52A71FFEA00F45019 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +43,9 @@
 		ED4E53AF2A71FFEB00F45019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED4E53B12A71FFEB00F45019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED4E53B72A720FF000F45019 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		ED9CD55F2A7389C40017F266 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		ED9CD5612A738A040017F266 /* TodoInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoInformation.swift; sourceTree = "<group>"; };
+		EDDB10E62A739E0900BA79A8 /* Movie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Movie.storyboard; sourceTree = "<group>"; };
 		EDF0A1752A7232D70057BA20 /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
 		EDF0A1772A7249650057BA20 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		EDF0A1792A724FAE0057BA20 /* ConcentrationMode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConcentrationMode.storyboard; sourceTree = "<group>"; };
@@ -59,6 +69,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED4B94E62A735292000A38A0 /* CustomCellPractice */ = {
+			isa = PBXGroup;
+			children = (
+				ED9CD55F2A7389C40017F266 /* ToDo.swift */,
+				ED9CD5612A738A040017F266 /* TodoInformation.swift */,
+				ED4B94E22A735040000A38A0 /* CustomTableViewController.swift */,
+				ED4B94E42A735286000A38A0 /* CustomTableViewCell.swift */,
+			);
+			path = CustomCellPractice;
+			sourceTree = "<group>";
+		};
+		ED4B94E72A7352A9000A38A0 /* TableViewPractice */ = {
+			isa = PBXGroup;
+			children = (
+				ED4E53A72A71FFEA00F45019 /* ViewController.swift */,
+				ED4E53B72A720FF000F45019 /* TodoTableViewController.swift */,
+				EDF0A1752A7232D70057BA20 /* StudyTableViewController.swift */,
+			);
+			name = TableViewPractice;
+			sourceTree = "<group>";
+		};
+		ED4B94E82A7352D2000A38A0 /* Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				EDDB10DF2A739BF000BA79A8 /* Movie */,
+				EDF0A17F2A7253F30057BA20 /* ConcentrationMode */,
+				EDF0A1802A7254050057BA20 /* Setting */,
+				EDF0A1812A7255F10057BA20 /* Shopping */,
+			);
+			name = Assignment;
+			sourceTree = "<group>";
+		};
 		ED4E53972A71FFEA00F45019 = {
 			isa = PBXGroup;
 			children = (
@@ -80,19 +122,24 @@
 			children = (
 				ED4E53A32A71FFEA00F45019 /* AppDelegate.swift */,
 				ED4E53A52A71FFEA00F45019 /* SceneDelegate.swift */,
-				ED4E53A72A71FFEA00F45019 /* ViewController.swift */,
-				ED4E53B72A720FF000F45019 /* TodoTableViewController.swift */,
-				EDF0A1752A7232D70057BA20 /* StudyTableViewController.swift */,
 				EDF0A1772A7249650057BA20 /* Extension.swift */,
 				ED4E53A92A71FFEA00F45019 /* Main.storyboard */,
-				EDF0A17F2A7253F30057BA20 /* ConcentrationMode */,
-				EDF0A1802A7254050057BA20 /* Setting */,
-				EDF0A1812A7255F10057BA20 /* Shopping */,
+				ED4B94E72A7352A9000A38A0 /* TableViewPractice */,
+				ED4B94E62A735292000A38A0 /* CustomCellPractice */,
+				ED4B94E82A7352D2000A38A0 /* Assignment */,
 				ED4E53AC2A71FFEB00F45019 /* Assets.xcassets */,
 				ED4E53AE2A71FFEB00F45019 /* LaunchScreen.storyboard */,
 				ED4E53B12A71FFEB00F45019 /* Info.plist */,
 			);
 			path = Week3;
+			sourceTree = "<group>";
+		};
+		EDDB10DF2A739BF000BA79A8 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				EDDB10E62A739E0900BA79A8 /* Movie.storyboard */,
+			);
+			name = Movie;
 			sourceTree = "<group>";
 		};
 		EDF0A17F2A7253F30057BA20 /* ConcentrationMode */ = {
@@ -183,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF0A1872A7256390057BA20 /* Shopping.storyboard in Resources */,
+				EDDB10E72A739E0900BA79A8 /* Movie.storyboard in Resources */,
 				ED4E53B02A71FFEB00F45019 /* LaunchScreen.storyboard in Resources */,
 				ED4E53AD2A71FFEB00F45019 /* Assets.xcassets in Resources */,
 				EDF0A17C2A7253990057BA20 /* Setting.storyboard in Resources */,
@@ -199,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF0A18A2A725C780057BA20 /* ShoppingImages.swift in Sources */,
+				ED9CD5602A7389C40017F266 /* ToDo.swift in Sources */,
 				EDF0A18C2A726EE20057BA20 /* ShoppingInfo.swift in Sources */,
 				EDF0A17E2A7253EB0057BA20 /* SettingTableViewController.swift in Sources */,
 				EDF0A1842A7256060057BA20 /* ShoppingTableViewController.swift in Sources */,
@@ -209,6 +258,9 @@
 				EDF0A1782A7249650057BA20 /* Extension.swift in Sources */,
 				ED4E53A42A71FFEA00F45019 /* AppDelegate.swift in Sources */,
 				ED4E53A62A71FFEA00F45019 /* SceneDelegate.swift in Sources */,
+				ED4B94E32A735040000A38A0 /* CustomTableViewController.swift in Sources */,
+				ED9CD5622A738A040017F266 /* TodoInformation.swift in Sources */,
+				ED4B94E52A735286000A38A0 /* CustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

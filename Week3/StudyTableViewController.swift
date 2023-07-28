@@ -37,13 +37,32 @@ class StudyTableViewController: UITableViewController {
         return section == 0 ? studyList.count : appleList.count
     }
     
+//    override func tableView(
+//        _ tableView: UITableView,
+//        titleForHeaderInSection section: Int
+//    ) -> String? {
+//
+//        return section == 0 ? "첫번째 섹션" : "섹션!"
+//    }
+    
+    // 100% 모든 경우의 수를 return 해줘야 함
     override func tableView(
         _ tableView: UITableView,
         titleForHeaderInSection section: Int
     ) -> String? {
         
-        return section == 0 ? "첫번째 섹션" : "섹션!"
+        if section == 0 {
+            return "첫번째 섹셕"
+        } else if section == 1 {
+            return "두번째 섹션"
+        } else if section == 2 {
+            return "세번째 섹션"
+        } else {
+            return nil
+        }
+
     }
+    
     
     // 2. 데이터, 디자인 처리
     override func tableView(
