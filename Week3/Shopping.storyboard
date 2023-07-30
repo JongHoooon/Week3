@@ -80,27 +80,66 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shoppingCell" textLabel="n5S-AX-wDB" imageView="Ajh-s6-itN" style="IBUITableViewCellStyleDefault" id="JDx-CQ-JxN">
-                                <rect key="frame" x="20" y="145.33333206176758" width="353" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingTableViewCell" rowHeight="77" id="JDx-CQ-JxN" customClass="ShoppingTableViewCell" customModule="Week3" customModuleProvider="target">
+                                <rect key="frame" x="20" y="145.33333206176758" width="353" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JDx-CQ-JxN" id="mOI-UA-Cx4">
-                                    <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="77"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n5S-AX-wDB">
-                                            <rect key="frame" x="56.666666666666657" y="0.0" width="276.33333333333331" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="checkmark.square.fill" catalog="system" id="Ajh-s6-itN">
-                                            <rect key="frame" x="22.333333333333336" y="12.999999999999998" width="19.333333333333332" height="17.333333333333332"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5I4-jW-KuD">
+                                            <rect key="frame" x="4" y="4" width="345" height="69"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5m-co-vt2">
+                                                    <rect key="frame" x="20" y="26.666666666666671" width="16" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="eCx-0e-OeP"/>
+                                                        <constraint firstAttribute="width" constant="16" id="rvo-JW-2cq"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="checkmark.square" catalog="system"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4w-xn-eCz">
+                                                    <rect key="frame" x="309" y="26.666666666666671" width="16" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="4fV-CZ-QRm"/>
+                                                        <constraint firstAttribute="width" constant="16" id="HBi-98-Gdw"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUk-tv-W05">
+                                                    <rect key="frame" x="46" y="24" width="253" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="R4w-xn-eCz" secondAttribute="trailing" constant="20" id="7lt-kJ-ON7"/>
+                                                <constraint firstItem="KUk-tv-W05" firstAttribute="centerY" secondItem="5I4-jW-KuD" secondAttribute="centerY" id="9rh-Id-uXl"/>
+                                                <constraint firstItem="KUk-tv-W05" firstAttribute="leading" secondItem="R5m-co-vt2" secondAttribute="trailing" constant="10" id="Skz-fz-VZJ"/>
+                                                <constraint firstItem="R4w-xn-eCz" firstAttribute="leading" secondItem="KUk-tv-W05" secondAttribute="trailing" constant="10" id="hSO-gU-T1y"/>
+                                                <constraint firstItem="R4w-xn-eCz" firstAttribute="centerY" secondItem="5I4-jW-KuD" secondAttribute="centerY" id="oL5-fy-IPc"/>
+                                                <constraint firstItem="R5m-co-vt2" firstAttribute="leading" secondItem="5I4-jW-KuD" secondAttribute="leading" constant="20" id="oam-zI-8xN"/>
+                                                <constraint firstItem="R5m-co-vt2" firstAttribute="centerY" secondItem="5I4-jW-KuD" secondAttribute="centerY" id="pAQ-0E-anM"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="5I4-jW-KuD" secondAttribute="trailing" constant="4" id="Drh-By-RYg"/>
+                                        <constraint firstAttribute="bottom" secondItem="5I4-jW-KuD" secondAttribute="bottom" constant="4" id="OYC-fe-abA"/>
+                                        <constraint firstItem="5I4-jW-KuD" firstAttribute="leading" secondItem="mOI-UA-Cx4" secondAttribute="leading" constant="4" id="Pyv-lc-xoV"/>
+                                        <constraint firstItem="5I4-jW-KuD" firstAttribute="top" secondItem="mOI-UA-Cx4" secondAttribute="top" constant="4" id="ajh-yA-mpg"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <connections>
+                                    <outlet property="checkBoxButton" destination="R5m-co-vt2" id="RRl-ll-mlw"/>
+                                    <outlet property="shoppingCellBackgroundView" destination="5I4-jW-KuD" id="hD8-Qy-Ugh"/>
+                                    <outlet property="shoppingTitleLabel" destination="KUk-tv-W05" id="sGr-Ag-EBi"/>
+                                    <outlet property="starButton" destination="R4w-xn-eCz" id="Snh-z7-FbX"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -121,7 +160,8 @@
     </scenes>
     <resources>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
-        <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

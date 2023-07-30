@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		ED22AC582A73A6AF006546D2 /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22AC572A73A6AF006546D2 /* MovieInfo.swift */; };
 		ED22AC5A2A73A6C5006546D2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22AC592A73A6C5006546D2 /* Movie.swift */; };
+		ED42A8B52A76226A005D8835 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42A8B42A76226A005D8835 /* ShoppingTableViewCell.swift */; };
 		ED4B94E32A735040000A38A0 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B94E22A735040000A38A0 /* CustomTableViewController.swift */; };
 		ED4B94E52A735286000A38A0 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B94E42A735286000A38A0 /* CustomTableViewCell.swift */; };
 		ED4E53A42A71FFEA00F45019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E53A32A71FFEA00F45019 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		ED22AC572A73A6AF006546D2 /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
 		ED22AC592A73A6C5006546D2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		ED42A8B42A76226A005D8835 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
 		ED4B94E22A735040000A38A0 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		ED4B94E42A735286000A38A0 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		ED4E53A02A71FFEA00F45019 /* Week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,8 +134,8 @@
 			children = (
 				ED4E53A32A71FFEA00F45019 /* AppDelegate.swift */,
 				ED4E53A52A71FFEA00F45019 /* SceneDelegate.swift */,
-				EDDB10EE2A73A23D00BA79A8 /* Extension */,
 				ED4E53A92A71FFEA00F45019 /* Main.storyboard */,
+				EDDB10EE2A73A23D00BA79A8 /* Extension */,
 				ED4B94E72A7352A9000A38A0 /* TableViewPractice */,
 				ED4B94E62A735292000A38A0 /* CustomCellPractice */,
 				ED4B94E82A7352D2000A38A0 /* Assignment */,
@@ -188,6 +190,7 @@
 			children = (
 				EDF0A18B2A726EE20057BA20 /* ShoppingInfo.swift */,
 				EDF0A1822A7256060057BA20 /* ShoppingTableViewController.swift */,
+				ED42A8B42A76226A005D8835 /* ShoppingTableViewCell.swift */,
 				EDF0A1892A725C780057BA20 /* ShoppingImages.swift */,
 				EDF0A1862A7256390057BA20 /* Shopping.storyboard */,
 			);
@@ -288,6 +291,7 @@
 				ED4E53A62A71FFEA00F45019 /* SceneDelegate.swift in Sources */,
 				ED4B94E32A735040000A38A0 /* CustomTableViewController.swift in Sources */,
 				ED9CD5622A738A040017F266 /* TodoInformation.swift in Sources */,
+				ED42A8B52A76226A005D8835 /* ShoppingTableViewCell.swift in Sources */,
 				ED4B94E52A735286000A38A0 /* CustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

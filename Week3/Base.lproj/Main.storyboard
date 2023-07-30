@@ -326,7 +326,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jqi-u8-hBw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="707"/>
+            <point key="canvasLocation" x="676" y="770"/>
         </scene>
         <!--ConcentrationMode-->
         <scene sceneID="hUh-HT-kwp">
@@ -336,7 +336,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JDc-jj-rxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="875"/>
+            <point key="canvasLocation" x="638" y="901"/>
         </scene>
         <!--Todo Table View Controller-->
         <scene sceneID="CEI-4n-l1S">
@@ -581,7 +581,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c15-Jk-FnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="635" y="1413"/>
+            <point key="canvasLocation" x="624" y="1430"/>
         </scene>
         <!--Setting-->
         <scene sceneID="t3p-4l-l7B">
@@ -591,7 +591,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7X7-8O-xVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="1139"/>
+            <point key="canvasLocation" x="656" y="1260"/>
         </scene>
     </scenes>
     <resources>

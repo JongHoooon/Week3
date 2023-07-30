@@ -30,6 +30,7 @@ final class ShoppingTableViewController: UITableViewController {
         
         configBackgroundView()
         tableView.keyboardDismissMode = .onDrag
+        tableView.rowHeight = 60.0
     }
     
     // MARK: - Action
@@ -77,18 +78,12 @@ extension ShoppingTableViewController {
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "shoppingCell") else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ShoppingTableViewCell.identifier) as? ShoppingTableViewCell else { return UITableViewCell() }
                 
-        let shoppingInfo = shoppingInfos[indexPath.row]
-        
-        cell.imageView?.image = shoppingInfo.isChecked ?
-            ShoppingImages.checkedBox :
-            ShoppingImages.notCheckedBox
-        cell.textLabel?.text = shoppingInfo.title
-        cell.accessoryView = shoppingInfo.isStared ?
-            UIImageView(image: ShoppingImages.checkedStar) :
-            UIImageView(image: ShoppingImages.notCheckedStar)
+        let row = shoppingInfos[indexPath.row]
+        cell.configureShoppingCell(row: row)
         
         return cell
     }
+    
 }
