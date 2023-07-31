@@ -18,4 +18,6 @@ enum ShoppingImages {
         .withTintColor(.label, renderingMode: .alwaysOriginal)
     static let notCheckedStar = UIImage(systemName: "star")?
         .withTintColor(.label, renderingMode: .alwaysOriginal)
+    
+    static let trash = UIImage(systemName: "trash")
 }

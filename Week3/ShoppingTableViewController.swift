@@ -86,4 +86,60 @@ extension ShoppingTableViewController {
         return cell
     }
     
+    override func tableView(
+        _ tableView: UITableView,
+        leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath
+    ) -> UISwipeActionsConfiguration? {
+        
+        let info = shoppingInfos[indexPath.row]
+        let completeAction = UIContextualAction(
+            style: .normal,
+            title: "",
+            handler: { [weak self] _, _, _ in
+                self?.shoppingInfos[indexPath.row].isChecked.toggle()
+                self?.tableView.reloadData()
+            })
+        let startAction = UIContextualAction(
+            style: .normal,
+            title: "",
+            handler: { [weak self] _, _, _ in
+                self?.shoppingInfos[indexPath.row].isStared.toggle()
+                self?.tableView.reloadData()
+            })
+        
+        switch info.isChecked {
+        case true:
+            completeAction.image = ShoppingImages.notCheckedBox
+        case false:
+            completeAction.image = ShoppingImages.checkedBox
+        }
+        switch info.isStared {
+        case true:
+            startAction.image = ShoppingImages.notCheckedStar
+        case false:
+            startAction.image = ShoppingImages.checkedStar
+        }
+        completeAction.backgroundColor = .green
+        startAction.backgroundColor = .blue
+        
+        return UISwipeActionsConfiguration(actions: [startAction, completeAction])
+    }
+    
+    override func tableView(
+        _ tableView: UITableView,
+        trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath
+    ) -> UISwipeActionsConfiguration? {
+        
+        let deleteAction = UIContextualAction(
+            style: .destructive,
+            title: ""
+        ) { [weak self] action, view, _ in
+            self?.shoppingInfos.remove(at: indexPath.row)
+            self?.tableView.reloadData()
+        }
+        deleteAction.image = ShoppingImages.trash
+        
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+    
 }
