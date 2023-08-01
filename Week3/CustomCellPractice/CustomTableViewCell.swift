@@ -13,7 +13,7 @@ final class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak private var checkBoxImageView: UIImageView!
     @IBOutlet weak private var mainTitleLabel: UILabel!
     @IBOutlet weak private var subTitleLabel: UILabel!
-    @IBOutlet weak private var likeButton: UIButton!
+    @IBOutlet weak var likeButton: UIButton!
     
     func configureCell(row: ToDo) {
         mainTitleLabel.text = row.main

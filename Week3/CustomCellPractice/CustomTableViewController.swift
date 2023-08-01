@@ -9,13 +9,43 @@ import UIKit
 
 class CustomTableViewController: UITableViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     var todo = ToDoInformation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rowHeight = 80.0
+        searchBar.placeholder = "할일을 입력해보세요"
+        searchBar.searchTextField.addTarget(
+            self,
+            action: #selector(searchBarReturnTapped),
+            for: .editingDidEndOnExit
+        )
+        
+        tableView.keyboardDismissMode = .onDrag
     }
+    
+    @objc
+    func searchBarReturnTapped() {
+        // Todo 항목을
+        let data = ToDo(
+            main: searchBar.text ?? "",
+            sub: "23.08.01",
+            like: false,
+            done: false
+        )
+        // list에 추가
+        todo.list.insert(data, at: 0)
+        // 갱신이 필요하다.
+        tableView.reloadData()
+        
+        searchBar.text = ""
+    }
+}
+
+extension CustomTableViewController {
     
     override func tableView(
         _ tableView: UITableView,
@@ -35,7 +65,23 @@ class CustomTableViewController: UITableViewController {
         let row = todo.list[indexPath.row]
         cell.configureCell(row: row)
         
+        // IBAction 으로 연결하면 재사용때문에 전부다 눌리는 현상 발생한다.
+        cell.likeButton.tag = indexPath.row
+        cell.likeButton.addTarget(
+            self,
+            action: #selector(likeButtonTapped),
+            for: .touchUpInside
+        )
+        
         return cell
+    }
+    
+    @objc
+    func likeButtonTapped(_ sender: UIButton) {
+        print(sender.tag)
+        
+        todo.list[sender.tag].like.toggle()
+        tableView.reloadData()
     }
     
     override func tableView(
