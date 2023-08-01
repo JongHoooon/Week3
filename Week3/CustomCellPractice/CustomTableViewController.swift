@@ -9,7 +9,7 @@ import UIKit
 
 class CustomTableViewController: UITableViewController {
     
-    let todo = ToDoInformation()
+    var todo = ToDoInformation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,5 +44,22 @@ class CustomTableViewController: UITableViewController {
     ) {
         print(indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    // 삭제
+    override func tableView(
+        _ tableView: UITableView,
+        canEditRowAt indexPath: IndexPath
+    ) -> Bool {
+        return true
+    }
+    
+    override func tableView(
+        _ tableView: UITableView,
+        commit editingStyle: UITableViewCell.EditingStyle,
+        forRowAt indexPath: IndexPath
+    ) {
+        todo.list.remove(at: indexPath.row)
+        tableView.reloadData()
     }
 }
