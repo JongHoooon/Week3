@@ -11,7 +11,11 @@ class CustomTableViewController: UITableViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var todo = ToDoInformation()
+    var todo = ToDoInformation() {
+        didSet { // 변수가 달라짐을 감지!
+            tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +43,7 @@ class CustomTableViewController: UITableViewController {
         // list에 추가
         todo.list.insert(data, at: 0)
         // 갱신이 필요하다.
-        tableView.reloadData()
+//        tableView.reloadData()
         
         searchBar.text = ""
     }
@@ -81,7 +85,7 @@ extension CustomTableViewController {
         print(sender.tag)
         
         todo.list[sender.tag].like.toggle()
-        tableView.reloadData()
+//        tableView.reloadData()
     }
     
     override func tableView(
@@ -106,6 +110,6 @@ extension CustomTableViewController {
         forRowAt indexPath: IndexPath
     ) {
         todo.list.remove(at: indexPath.row)
-        tableView.reloadData()
+//        tableView.reloadData()
     }
 }
