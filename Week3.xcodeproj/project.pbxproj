@@ -14,7 +14,6 @@
 		ED4B94E52A735286000A38A0 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B94E42A735286000A38A0 /* CustomTableViewCell.swift */; };
 		ED4E53A42A71FFEA00F45019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E53A32A71FFEA00F45019 /* AppDelegate.swift */; };
 		ED4E53A62A71FFEA00F45019 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E53A52A71FFEA00F45019 /* SceneDelegate.swift */; };
-		ED4E53A82A71FFEA00F45019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E53A72A71FFEA00F45019 /* ViewController.swift */; };
 		ED4E53AB2A71FFEA00F45019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4E53A92A71FFEA00F45019 /* Main.storyboard */; };
 		ED4E53AD2A71FFEB00F45019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4E53AC2A71FFEB00F45019 /* Assets.xcassets */; };
 		ED4E53B02A71FFEB00F45019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4E53AE2A71FFEB00F45019 /* LaunchScreen.storyboard */; };
@@ -46,7 +45,6 @@
 		ED4E53A02A71FFEA00F45019 /* Week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4E53A32A71FFEA00F45019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED4E53A52A71FFEA00F45019 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED4E53A72A71FFEA00F45019 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED4E53AA2A71FFEA00F45019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED4E53AC2A71FFEB00F45019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED4E53AF2A71FFEB00F45019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 		ED4B94E72A7352A9000A38A0 /* TableViewPractice */ = {
 			isa = PBXGroup;
 			children = (
-				ED4E53A72A71FFEA00F45019 /* ViewController.swift */,
 				ED4E53B72A720FF000F45019 /* TodoTableViewController.swift */,
 				EDF0A1752A7232D70057BA20 /* StudyTableViewController.swift */,
 			);
@@ -280,7 +277,6 @@
 				EDF0A18C2A726EE20057BA20 /* ShoppingInfo.swift in Sources */,
 				EDF0A17E2A7253EB0057BA20 /* SettingTableViewController.swift in Sources */,
 				EDF0A1842A7256060057BA20 /* ShoppingTableViewController.swift in Sources */,
-				ED4E53A82A71FFEA00F45019 /* ViewController.swift in Sources */,
 				EDF0A18E2A7298E00057BA20 /* SettingCategory.swift in Sources */,
 				ED4E53B82A720FF000F45019 /* TodoTableViewController.swift in Sources */,
 				EDF0A1762A7232D70057BA20 /* StudyTableViewController.swift in Sources */,
